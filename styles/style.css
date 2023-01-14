@@ -102,7 +102,7 @@ body{
 
 .about-marathon__wishes-list,
 .author__list{
-  padding: 0 0 20px 15px;
+  padding: 0 0 20px 20px;
   font-size: 13px;
 }
 .about-marathon__wishes-item,
@@ -182,12 +182,14 @@ body{
 
 .blockquote-content{
     font-weight: 900;
-    font-size: 14px;
+    /* font-size: 14px; */
     line-height: 24px;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     text-align: center;
+    color: var(--txt-c-secondaryt);
     background-color: white;
     border-radius: 26px;
-    color: var(--txt-c-secondaryt);
+    margin: 20px 10px;
+    padding: 10px;
 }
