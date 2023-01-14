@@ -187,7 +187,7 @@ body{
     display: flex;
     align-items: center;
     text-align: center;
-    background-color: white;
+    background-color: red;
     border-radius: 26px;
     color: var(--txt-c-secondaryt);
 }
