@@ -28,7 +28,7 @@ list-style: none;
     font-size: 16px;
 }
 .secondary-title{
-    padding: 15px;
+    padding: 20px;
     font-size: 18px;
     line-height: 24px;
     text-align: center;
@@ -42,7 +42,7 @@ body{
     background-color: #F5F5F5;
 }
 .container{
-    padding: 0 5px;
+    padding: 0 5px 25px 5px;
     max-width: 390px;
     margin: 0 auto;
 }
