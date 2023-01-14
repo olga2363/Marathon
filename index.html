@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ukr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marathon</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="container">
+        <marquee class="start-day" behavior="alternate">
+            <button class="header__start btn">14 лютого 2023</button>
+        </marquee>
+
+        <img class="header__img" src="images/main.svg" alt="body">
+         <div class="header__content">
+            <h1 class="header__title">Марафон <br> “СТРУНКЕ ТА ЗДОРОВЕ ТІЛО” </h1>
+            <div id="countdown" class="countdown">
+                <div class="countdown-number">
+                    <img src="images/days.svg" alt="pic">
+                <span class="days countdown-time"></span>
+                <span class="countdown-text">Days</span>
+                </div>
+                <div class="countdown-number">
+                    <img src="images/hours.svg" alt="#">
+                <span class="hours countdown-time"></span>
+                <span class="countdown-text">Hours</span>
+                </div>
+                <div class="countdown-number">
+                    <img src="images/min.svg" alt="#">
+                <span class="minutes countdown-time"></span>
+                <span class="countdown-text">Minutes</span>
+                </div>
+                <div class="countdown-number">
+                    <img src="images/sec.svg" alt="#">
+                <span class="seconds countdown-time"></span>
+                <span class="countdown-text">Seconds</span>
+                </div>
+            </div>
+            <button class="header__btn btn">Прийняти участь</button>
+
+          </div>
+    </header>
+    
+    <section class="container about-marathon">
+        <div class="about-marathon__wishes">
+            <!-- <img src="images/about.svg" alt="about-marathon"> -->
+            <h3 class="secondary-title wishes-title">Цей курс для тебе, якщо ти хочеш:</h3>
+            <ul class="about-marathon__wishes-list">
+                <li class="about-marathon__wishes-item">Підтягнути та зміцнити м’язи всього тіла.</li>
+                <li class="about-marathon__wishes-item">Позбутись зайвих жирових відкладень.</li>
+                <li class="about-marathon__wishes-item">Стати гнучкішою та наблизитись до шпагату.</li>
+                <li class="about-marathon__wishes-item">Повноцінно харчуватись і тримати вагу в нормі.</li>
+                <li class="about-marathon__wishes-item">Стати впевненішою у собі.</li>
+            </ul>
+        </div>
+        <div class="about-marathon__steps">
+            <h3 class="secondary-title">Що тебе чекає на марафоні</h3>
+            <ol class="about-marathon__steps-list">
+                <li class="about-marathon__steps-item">
+                    <img class="steps-img" src="images/step1.svg" alt="img">
+                    <div class="steps-content">
+                        <h4 class="steps-title">2 тижні регулярних тренувань</h4>
+                        <span class="stps-info">силові та функціональні вправи на все тіло + розтяжка</span>
+                    </div>
+                </li>
+                <li class="about-marathon__steps-item">
+                    <img class="steps-img" src="images/step2.svg" alt="img">
+                    <div class="steps-content">
+                        <h4 class="steps-title">10 тренувань в записі по 30 хвилин</h4>
+                        <span class="stps-info">доступні для тебе в будь-який час</span>
+                    </div>
+                </li>
+                <li class="about-marathon__steps-item">
+                    <img class="steps-img" src="images/step3.svg" alt="img">
+                    <div class="steps-content">
+                        <h4 class="steps-title">Принципи здорового харчування</h4>
+                        <span class="stps-info">всі матеріали залишаться з тобой назавжди</span>
+                    </div>
+                </li>
+                <li class="about-marathon__steps-item">
+                    <img class="steps-img" src="images/step4.svg" alt="img">
+                    <div class="steps-content">
+                        <h4 class="steps-title">Прокачаєш все тіло та станеш стрункішою</h4>
+                        <span class="stps-info">дотримуйся всіх рекомендацій та неодмінно отримуй результати</span>
+                    </div>
+                 </li>
+            </ol>
+        </div>
+
+    </section>
+
+    <section class="container author">
+        <h3 class="secondary-title author-title">Автор марафону</h3>
+        <img src="images/author.svg" alt="img">
+        <h2 class="me-title">Анна Лапигіна</h2>
+        <ul class="author__list">
+            <li class="author__item">сертифікований тренер групових та персональних занять.</li>
+            <li class="author__item">основні напрямки роботи: stretching, functional training, силові тренування, МФР.</li>
+            <li class="author__item">досвід роботи тренером 5 років.</li>
+            <li class="author__item">учасниця та бронзова призерка змагань з фітнесу та бодібілдингу «Fitness Bikini» 2021 р.</li>
+            <li class="author__item">учасниця конвенцій Nike, ProFit у 2018-2021 р.</li>
+            <li class="author__item">пройшла навчання з нутріціології, підтримання та корекції маси тіла.</li>
+        </ul>
+        <span class="author__content">Крім того, багато програм перевірила на собі та знаю точно, що саме допомагає тримати тіло в гарній формі.</span>
+    </section>
+
+    <blockquote class="blockquote-content">“Тренуйся вдома в задоволення та отримуй чудові результати! Приєднуйся до марафону вже сьогодні!”</blockquote>
+   
+    <section class="container program">
+        <h3>Програма марафона</h3>
+        <div class="">
+            <h4>Тждень 1</h4>
+            <ul>
+                <li> День 1
+                    <ul>
+                        <li>Силове тренування на ноги , сідниці та спину.</li>
+                        <li>Топ 10 правил здорового харчування</li>
+                        <li>Заміри, контроль ваги, фотозвіти</li>
+                    </ul>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="">
+            <h4>Тждень 2</h4>
+        </div>
+    </section>
+
+
+    <script src="time.js"></script>
+</body>
+</html>

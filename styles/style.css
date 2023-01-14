@@ -1,0 +1,193 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+
+:root {
+    /* background */
+    --c-primery: #192126;
+    --c-secondary: #8B8F92;
+    --c-accent: #BBF246;
+    --c-light: #FFFFFF;
+    /* text */
+    --txt-c-primery: var(--c-primery-dark);
+    --txt-c-secondaryt: var(--c-secondary);
+    --txt-c-accent: var(--c-accent);
+    --txt-c-light:var(--c-light);
+    /* font */
+  }
+ul, ol, li{
+list-style: none;
+}
+.btn{
+    border-radius: 32px;
+    margin-top: 10px;
+    padding: 14px 35px;
+    font-size: 16px;
+}
+.secondary-title{
+    padding: 15px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: 700;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 400;
+    background-color: #F5F5F5;
+}
+.container{
+    padding: 0 5px;
+    max-width: 390px;
+    margin: 0 auto;
+}
+
+.start-day{
+    color: var(--c-primery);
+    position: absolute;
+    padding: 5px;
+}
+.header__start{
+    background-color: var(--c-accent);
+    margin: 0 auto;
+
+}
+.header__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -40px;
+}
+.header__title{
+    text-align: center;
+    font-size: 24px;
+    line-height: 29px;
+}
+.countdown{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.countdown-number{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid black 1px;
+    border-radius: 40%;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 2px 6px 27px 3px rgb(0 0 0 / 20%);
+    justify-content: flex-end;
+}
+.header__btn{
+    background-color: var(--c-primery);
+    color: var(--txt-c-light);
+}
+
+.about-marathon__wishes{
+    background-image: url(../images/about.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 15px;
+    padding: 5px;
+    color: var(--txt-c-light);
+}
+
+.about-marathon__wishes-list,
+.author__list{
+  padding: 0 0 20px 15px;
+  font-size: 13px;
+}
+.about-marathon__wishes-item,
+.author__item{
+  list-style-image: url(../images/back.svg);
+  padding-bottom: 7px;
+}
+
+.about-marathon__steps-list{
+    list-style: calc(1);
+}
+.about-marathon__steps-item{
+    display: flex;
+    background-color: white;
+    border-radius: 26px;
+    margin-bottom: 20px;
+    counter-increment: number;
+}
+
+.about-marathon__steps-item::after{
+    content: counter(number);
+    background-color: var(--c-accent);
+    padding: 2px 8px;
+    height: 17px;
+    font-size: 10px;
+    line-height: 15px;
+    color: #5E6468;
+    border-radius: 0px 0px 6px 6px;
+    margin-right: 21px;
+    margin-top: -5px;
+}
+.steps-img{
+    margin: 9px 15px;
+}
+.steps-content{
+    margin-top: 23px;
+}
+.steps-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.stps-info{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: rgba(25, 33, 38, 0.5);       
+}
+
+.author{
+    background-color: var(--c-primery);
+    padding-bottom: 25px;
+
+}
+.author-title{
+    font-weight: 500;
+    color: var(--txt-c-light);
+}
+.me-title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: var(--txt-c-light);
+   padding: 25px 0;
+}
+
+.author__list,
+.author__content{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.blockquote-content{
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 26px;
+    color: var(--txt-c-secondaryt);
+}
