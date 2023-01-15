@@ -101,12 +101,14 @@ body{
 }
 
 .about-marathon__wishes-list,
-.author__list{
+.author__list,
+.price__list{
   padding: 0 0 20px 20px;
   font-size: 13px;
 }
 .about-marathon__wishes-item,
-.author__item{
+.author__item,
+.price__item{
   list-style-image: url(../images/back.svg);
   padding-bottom: 7px;
 }
@@ -192,4 +194,75 @@ body{
     border-radius: 26px;
     margin: 20px 10px;
     padding: 10px;
+}
+
+/* .day-of{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.day-ot-list{
+    background-color: var(--c-accent);
+    border-radius: 12px;
+    padding: 6px 14px;
+}
+
+.day-content{
+    display: none;
+}
+.active{
+color: rgb(0, 255, 76);
+display: block;
+}  */
+
+.price{
+    background-image: url(../images/price.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 15px;
+    padding: 0 5px 15px 5px;
+    color: var(--txt-c-light);
+    border-radius: 26px;
+    display: flex;
+    flex-direction: column;
+}
+.price__list{
+    font-style: normal;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    padding-top: 20px;
+}
+.old-prise{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: line-through;
+    color: red;
+    margin: 0 20px 20px 20px;
+}
+.new-prise{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--c-accent);
+    margin: 0 20px 20px 20px;
+}
+.help{
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    margin: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+.accent__btn{
+    background-color: var(--c-accent);
+    color: #192126;
+    display: block;
+    margin: 0 auto;
 }
