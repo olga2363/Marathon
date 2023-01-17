@@ -7,37 +7,43 @@
     <title>marathon</title>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/jquery.fancybox.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header class="container">
-        <!-- <marquee class="start-day" behavior="alternate"> -->
+        <marquee class="start-day">
             <button class="header__start btn">14 лютого 2023</button>
-        <!-- </marquee> -->
+            <button class="header__start btn">14 лютого 2023</button>
+            <button class="header__start btn">14 лютого 2023</button>
+        </marquee>
 
         <img class="header__img" src="images/main.svg" alt="body">
          <div class="header__content">
             <h1 class="header__title">Марафон <br> “СТРУНКЕ ТА ЗДОРОВЕ ТІЛО” </h1>
             <div id="countdown" class="countdown">
                 <div class="countdown-number">
-                    <img src="images/days.svg" alt="">
+                    <!-- <img src="images/days.svg" alt=""> -->
                 <span class="days countdown-time"></span>
                 <span class="countdown-text">Days</span>
                 </div>
                 <div class="countdown-number">
-                    <img src="images/hours.svg" alt="#">
+                    <!-- <img src="images/hours.svg" alt="#"> -->
                 <span class="hours countdown-time"></span>
                 <span class="countdown-text">Hours</span>
                 </div>
                 <div class="countdown-number">
-                    <img src="images/min.svg" alt="#">
+                    <!-- <img src="images/min.svg" alt="#"> -->
                 <span class="minutes countdown-time"></span>
-                <span class="countdown-text">Minutes</span>
+                <span class="countdown-text">Min.</span>
                 </div>
                 <div class="countdown-number">
-                    <img src="images/sec.svg" alt="#">
+                    <!-- <img src="images/sec.svg" alt="#"> -->
                 <span class="seconds countdown-time"></span>
-                <span class="countdown-text">Seconds</span>
+                <span class="countdown-text">Sec.</span>
                 </div>
             </div>
             <button class="header__btn btn">Прийняти участь</button>
@@ -111,73 +117,152 @@
     <section class="container">
     <blockquote class="blockquote-content">“Тренуйся вдома в задоволення та отримуй чудові результати! Приєднуйся до марафону вже сьогодні!”</blockquote>
     </section>
+<section>
 
-    <!-- <section class="container program">
-        <h3 class="secondary-title">Програма марафона</h3>
-        <h4>Тждень 1</h4>
-        <div class="program__week1">
-            <ol class="day-of">
-                <li class="day-ot-list">1</li>
-                <li class="day-ot-list">2</li>
-                <li class="day-ot-list">3</li>
-                <li class="day-ot-list">4</li>
-                <li class="day-ot-list">6</li>
-                <li class="day-ot-list">7</li>
-                <li class="day-ot-list">8</li>
-             </ol>
-
-                <ul class="day-content ">
-                    <li>Силове тренування на ноги , сідниці та спину.</li>
-                    <li>Топ 10 правил здорового харчування</li>
-                    <li>Заміри, контроль ваги, фотозвіти</li>
-                </ul>  
-              
-                <ul class="day-content ">
-                    <li>Силове тренування на ноги , сідниці та спину.</li>
-                    <li>Топ 10 правил здорового харчування</li>
-                    <li>Заміри, контроль ваги, фотозвіти</li>
-                </ul>
-              
-                <ul class="day-content ">
-                    <li>Силове тренування на ноги , сідниці та спину.</li>
-                    <li>Топ 10 правил здорового харчування</li>
-                    <li>Заміри, контроль ваги, фотозвіти</li>
-                </ul>
-              
-                <ul class="day-content ">
-                    <li>Силове тренування на ноги , сідниці та спину.</li>
-                    <li>Топ 10 правил здорового харчування</li>
-                    <li>Заміри, контроль ваги, фотозвіти</li>
-                </ul>  
-               
-                <ul class="day-content ">
-                    <li>Силове тренування на ноги , сідниці та спину.</li>
-                    <li>Топ 10 правил здорового харчування</li>
-                    <li>Заміри, контроль ваги, фотозвіти</li>
-                </ul>
-             
-                <ul class="day-content ">
-                    <li>Силове тренування на ноги , сідниці та спину.</li>
-                    <li>Топ 10 правил здорового харчування</li>
-                    <li>Заміри, контроль ваги, фотозвіти</li>
-                </ul> 
-               
-                <ul class="day-content ">
-                    <li>Силове тренування на ноги , сідниці та спину.</li>
-                    <li>Топ 10 правил здорового харчування</li>
-                    <li>Заміри, контроль ваги, фотозвіти</li>
-                </ul>
-              
-              
-        </div>   
-        
-        <div class="">
-            <h4>Тждень 2</h4>
+<section class="container">
+    <h3 class="secondary-title">Програма марафона</h3>
+    <h4>Тждень 1</h4>
+    <div class="info-tabs">
+        <div class="info-tabs__items">
+          <a href="#tab-1" class="info-tabs__item info-tabs__item--active">1</a>
+          <a href="#tab-2" class="info-tabs__item">2</a>
+          <a href="#tab-3" class="info-tabs__item">3</a>
+          <a href="#tab-4" class="info-tabs__item">4</a>
+          <a href="#tab-5" class="info-tabs__item">5</a>
+          <a href="#tab-6" class="info-tabs__item">6</a>
+          <a href="#tab-7" class="info-tabs__item">7</a>
         </div>
-    </section> -->
+        <div class="info-tabs__contentbox">
+          <div class="info-tabs__content info-tabs__content--active" id="tab-1">
+            <div class="info-slider">
+              <div class="info-slider__item">
+                <p class="info-slider__text">
+                 11111</p>
+              </div>
+              <div class="info-slider__item">
+                <p class="info-slider__text">
+                  222222</p>
+              </div>
+              <div class="info-slider__item">
+                <p class="info-slider__text">33333</p>
+              </div>
+            </div>
+          </div>
 
-    <section class="container">
-        
+          <div class="info-tabs__content" id="tab-2">
+            <div class="info-slider__item">
+                <p class="info-slider__text">
+                  222222</p>
+              </div>
+          </div>
+
+          <div class="info-tabs__content" id="tab-3">
+            <div class="info-slider__item">
+                <p class="info-slider__text">
+                  333333</p>
+              </div>
+          </div>
+          <div class="info-tabs__content" id="tab-4">
+            <div class="info-slider__item">
+                <p class="info-slider__text">
+                  333333</p>
+              </div>
+          </div>
+
+          <div class="info-tabs__content" id="tab-5">
+            <div class="info-slider__item">
+                <p class="info-slider__text">
+                  5555</p>
+              </div>
+          </div>
+          <div class="info-tabs__content" id="tab-6">
+            <div class="info-slider__item">
+                <p class="info-slider__text">
+                  6666</p>
+              </div>
+          </div>
+          <div class="info-tabs__content" id="tab-7">
+            <div class="info-slider__item">
+                <p class="info-slider__text">
+                  333333</p>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <h4>Тждень 2</h4>
+      <div class="info-tabs">
+        <div class="info-tabs__items">
+          <a href="#tab-8" class="info-tabs__item info-tabs__item--active">1</a>
+          <a href="#tab-9" class="info-tabs__item">2</a>
+          <a href="#tab-10" class="info-tabs__item">3</a>
+          <a href="#tab-11" class="info-tabs__item">4</a>
+          <a href="#tab-12" class="info-tabs__item">5</a>
+          <a href="#tab-13" class="info-tabs__item">6</a>
+          <a href="#tab-14" class="info-tabs__item">7</a>
+        </div>
+        <div class="info-tabs__contentbox">
+          <div class="info-tabs__content info-tabs__content--active" id="tab-8">
+            <div class="info-slider">
+              <div class="info-slider__item">
+                <p class="info-slider__text">
+                 11111</p>
+              </div>
+              <div class="info-slider__item">
+                <p class="info-slider__text">
+                  222222</p>
+              </div>
+              <div class="info-slider__item">
+                <p class="info-slider__text">33333</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-tabs__content" id="tab-9">
+            <div class="info-slider__item">
+                <p class="info-slider__text">
+                  222222</p>
+              </div>
+          </div>
+
+          <div class="info-tabs__content" id="tab-10">
+            <div class="info-slider__item">
+                <p class="info-slider__text">
+                  333333</p>
+              </div>
+          </div>
+          <div class="info-tabs__content" id="tab-11">
+            <div class="info-slider__item">
+                <p class="info-slider__text">
+                  333333</p>
+              </div>
+          </div>
+
+          <div class="info-tabs__content" id="tab-12">
+            <div class="info-slider__item">
+                <p class="info-slider__text">
+                  5555</p>
+              </div>
+          </div>
+          <div class="info-tabs__content" id="tab-13">
+            <div class="info-slider__item">
+                <p class="info-slider__text">
+                  6666</p>
+              </div>
+          </div>
+          <div class="info-tabs__content" id="tab-14">
+            <div class="info-slider__item">
+                <p class="info-slider__text">
+                  333333</p>
+              </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+</section>
+  
+    <section class="container"> 
         <div class="price">
             <h3 class="secondary-title">Вартість марафону</h3>
             <ul class="price__list">
@@ -187,7 +272,7 @@
                 <li class="price__item">Меню - конструктор по складанню раціону харчування.</li>
                 <li class="price__item">Корисні матеріли, щодо здорового харчування та активного способу життя.</li>
                 <li class="price__item">Закритий чат с учасницями курсу та тренером.</li>
-                <li class="price__item">Зв‘язок з тренером <b>24/7</b></li>
+                <li class="price__item">Зв‘язок з тренером <b>24/7.</b></li>
             </ul>
             <div class="">
                 <span class="old-prise">850 грн.</span>
@@ -203,10 +288,29 @@
     </section>
 
     <section class="container">
-     </section>
+        <h3 class="secondary-title">Заповни форму для участі в марафоні</h3>
+        <form class="callback">
+                <!-- Hidden Required Fields  для отправки на мыло-->
+                <input type="hidden" name="project_name" value="marathon">
+                <input type="hidden" name="admin_email" value="okhomenko2363@gmail.com">
+                <input type="hidden" name="form_subject" value="Form">
+                <!-- END Hidden Required Fields -->
+      
+                <input class="callback__input input-name" name="Имя" type="text" placeholder="Прізвище, Імя">
+                <input class="callback__input input-tel" name="Телефон" type="tel" placeholder="Телефон">
+                <input class="callback__input input-mail" name="Телефон" type="e-mail" placeholder="Електронна пошта">
+                <button class="accent__btn btn">
+                  <span>
+                    Залишити заявку
+                  </span>
+                </button>
+        </form>
+    </section>
 
-        <script src="js/time.js"></script>
-        <script src="js/program.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/time.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/program.js"></script>
 
 
 </body>
