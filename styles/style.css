@@ -23,6 +23,9 @@ list-style: none;
 }
 button{
     list-style: none;
+    border: none;
+    font: inherit;
+    color: inherit;
 }
 
 .btn{
@@ -76,18 +79,18 @@ body{
 .countdown{
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    
+    margin: 20px auto;
 }
 
 .countdown-number{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: solid black 1px; */
     border-radius: 40%;
     padding: 10px;
     margin: 5px;
-    box-shadow: 2px 6px 27px 3px rgb(0 0 0 / 20%);
+    box-shadow: 2px 6px 27px 3px rgb(0 0 0 / 4%);
     justify-content: flex-end;
 }
 .header__btn{
@@ -113,7 +116,8 @@ body{
 }
 .about-marathon__wishes-item,
 .author__item,
-.price__item{
+.price__item,
+.weeks__item{
   list-style-image: url(../images/back.svg);
   padding-bottom: 7px;
 }
@@ -202,40 +206,29 @@ body{
     padding: 10px;
 }
 
-/* .day-of{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.day-ot-list{
-    background-color: var(--c-accent);
-    border-radius: 12px;
-    padding: 6px 14px;
-}
-
-.day-content{
-    display: none;
-}
-.active{
-color: rgb(0, 255, 76);
-display: block;
-}  */
 
 .info-tabs {
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 .info-tabs__items{
-    margin-bottom: 120px;   
+    margin-bottom: 12px;   
+    display: flex;
+    justify-content: space-around;
 }
 .info-tabs__item{
     font-size: 18px;
     line-height: 25px;
-    margin-right: 40px;
+    padding: 10px 15px;
+    /* margin-right: 40px; */
+    border-radius: 12px;
+    background-color: var(--c-accent);
+    color: var(--txt-c-primery);
 }
 
 .info-tabs__item--active{
-  border-bottom: 1px solid #303030; 
+  border: none;
+  background-color: var(--c-primery);
+  color: var(--c-accent);
 }
 
 .info-tabs__content{
@@ -243,12 +236,24 @@ display: block;
 }
 .info-tabs__content--active{
     display: block;
+    background-color: var(--c-light);
+    color: var(--txt-c-secondaryt);    
+    padding: 20px;
+    font-size: 13px;
+    border-radius: 26px;
 }
-
-
-
-
-
+.weeks-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 20px auto;
+}
+.weeks__day-content{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--txt-c-primery);
+}
 
 
 
@@ -299,7 +304,7 @@ display: block;
     background-color: var(--c-accent);
     color: #192126;
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 
@@ -308,11 +313,13 @@ display: block;
     flex-direction: column;
     align-items: center;
 }
+
 .callback__input{
     background-color: var(--c-primery);
     color: var(--txt-c-light);
     padding: 15px 70px;
     margin: 10px;
+    border: none;
     border-radius: 15px;
 }
 .input-name{
