@@ -15,15 +15,15 @@
 </head>
 <body>
     <header class="container">
-        <marquee class="start-day">
-            <button class="header__start btn">14 лютого 2023</button>
-            <button class="header__start btn">14 лютого 2023</button>
-            <button class="header__start btn">14 лютого 2023</button>
-        </marquee>
-
-        <img class="header__img" src="images/main.svg" alt="body">
-         <div class="header__content">
-            <h1 class="header__title">Марафон <br> “СТРУНКЕ ТА ЗДОРОВЕ ТІЛО” </h1>
+         <div class="header__top-content">
+            <marquee class="start-day">
+                <button class="header__start btn">14 лютого 2023</button>
+                <button class="header__start btn">14 лютого 2023</button>
+                <button class="header__start btn">14 лютого 2023</button>
+            </marquee>
+        </div>
+        <div class="header__content">
+             <h1 class="header__title">Марафон <br> “СТРУНКЕ ТА ЗДОРОВЕ ТІЛО” </h1>
             <div id="countdown" class="countdown">
                 <div class="countdown-number">
                     <!-- <img src="images/days.svg" alt=""> -->
@@ -45,15 +45,13 @@
                 <span class="seconds countdown-time"></span>
                 <span class="countdown-text">Sec.</span>
                 </div>
-            </div>
-            <button class="header__btn btn">Прийняти участь</button>
-
-          </div>
+            </div>     
+          <button class="header__btn btn">Прийняти участь</button>
+        </div>
     </header>
     
     <section class="container about-marathon">
         <div class="about-marathon__wishes">
-            <!-- <img src="images/about.svg" alt="about-marathon"> -->
             <h3 class="secondary-title wishes-title">Цей курс для тебе, якщо ти хочеш:</h3>
             <ul class="about-marathon__wishes-list">
                 <li class="about-marathon__wishes-item">Підтягнути та зміцнити м’язи всього тіла.</li>
@@ -119,148 +117,152 @@
     </section>
 <section>
 
-<section class="container">
+<section class="container weeks">
     <h3 class="secondary-title">Програма марафона</h3>
-    <h4 class="weeks-title">Тиждень 1</h4>
-    <div class="info-tabs">
-        <div class="info-tabs__items">
-          <a href="#tab-1" class="info-tabs__item info-tabs__item--active">1</a>
-          <a href="#tab-2" class="info-tabs__item">2</a>
-          <a href="#tab-3" class="info-tabs__item">3</a>
-          <a href="#tab-4" class="info-tabs__item">4</a>
-          <a href="#tab-5" class="info-tabs__item">5</a>
-          <a href="#tab-6" class="info-tabs__item">6</a>
-          <a href="#tab-7" class="info-tabs__item">7</a>
-        </div>
-        <div class="info-tabs__contentbox">
-          <div class="info-tabs__content info-tabs__content--active" id="tab-1">
-                <h4 class="weeks__day-content"> День 1</h4>
+    <div class="weeks__content">
+       
+        <div class="info-tabs">
+            <h4 class="weeks-title">Тиждень 1</h4> 
+            <div class="info-tabs__items">
+            <a href="#tab-1" class="info-tabs__item info-tabs__item--active">1</a>
+            <a href="#tab-2" class="info-tabs__item">2</a>
+            <a href="#tab-3" class="info-tabs__item">3</a>
+            <a href="#tab-4" class="info-tabs__item">4</a>
+            <a href="#tab-5" class="info-tabs__item">5</a>
+            <a href="#tab-6" class="info-tabs__item">6</a>
+            <a href="#tab-7" class="info-tabs__item">7</a>
+            </div>
+            <div class="info-tabs__contentbox">
+            <div class="info-tabs__content info-tabs__content--active" id="tab-1">
+                    <h4 class="weeks__day-content"> День 1</h4>
+                    <ul class="weeks__list">
+                        <li class="weeks__item">Силове тренування на ноги та сідниці та спину.</li>
+                        <li class="weeks__item">Меню-конструктор.</li>
+                        <li class="weeks__item">Робимо заміри, зважування та фото для відстеження результатів за 2 тижні.</li>
+                    </ul>
+            </div>
+
+            <div class="info-tabs__content" id="tab-2">
+                <h4 class="weeks__day-content">День 2</h4>
                 <ul class="weeks__list">
-                    <li class="weeks__item">Силове тренування на ноги та сідниці та спину.</li>
-                    <li class="weeks__item">Меню-конструктор.</li>
-                    <li class="weeks__item">Робимо заміри, зважування та фото для відстеження результатів за 2 тижні.</li>
+                    <li class="weeks__item">Розтяжка.</li>
+                    <li class="weeks__item">Основні правила здорового харчування + тарілка харчування.</li>
                 </ul>
-          </div>
+            </div>
 
-          <div class="info-tabs__content" id="tab-2">
-            <h4 class="weeks__day-content">День 2</h4>
-            <ul class="weeks__list">
-                <li class="weeks__item">Розтяжка.</li>
-                <li class="weeks__item">Основні правила здорового харчування + тарілка харчування.</li>
-            </ul>
-          </div>
-
-          <div class="info-tabs__content" id="tab-3">
-            <h4 class="weeks__day-content">День 3</h4>
-            <ul class="weeks__list">
-                <li class="weeks__item">Силове тренування на руки, плечі та прес.</li>
-                <li class="weeks__item">Відео-розбір на тему: «Відмінність складних вуглеводів від простих та їх вплив на тіло».</li>
-                <li class="weeks__item">Пам’ятка “ Транс-жири та прості вуглеводи”.</li>
-            </ul>
-               
-          
-          </div>
-          <div class="info-tabs__content" id="tab-4">
-            <h4 class="weeks__day-content">День 4</h4>
-            <ul class="weeks__list">
-                <li class="weeks__item">Розтяжка.</li>
-            </ul>
-          </div>
-
-          <div class="info-tabs__content" id="tab-5">
-            <h4 class="weeks__day-content">День 5</h4>
-            <ul class="weeks__list">
-                <li class="weeks__item">Функціональний тренінг на все тіло.</li>
-                <li class="weeks__item">Список продуктів на випадок відключень електроенергії.</li>
-            </ul>
-          </div>
-          <div class="info-tabs__content" id="tab-6">
-            <h4 class="weeks__day-content">День 6</h4>
-            <ul class="weeks__list">
-                <li class="weeks__item">В цей день ти можеш відпочити або повторити будь яке з попередніх тренувань.</li>
-                <li class="weeks__item">Продовжуй харчуватись по плану.</li>
-            </ul>
-          </div>
-          <div class="info-tabs__content" id="tab-7">
-            <h4 class="weeks__day-content">День 7</h4>
-            <ul class="weeks__list">
-                <li class="weeks__item">В цей день ти можеш відпочити або повторити будь яке з попередніх тренувань.</li>
-                <li class="weeks__item">Продовжуй харчуватись по плану.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <h4 class="weeks-title">Тиждень 2</h4>
-      <div class="info-tabs">
-        <div class="info-tabs__items">
-          <a href="#tab-8" class="info-tabs__item info-tabs__item--active">1</a>
-          <a href="#tab-9" class="info-tabs__item">2</a>
-          <a href="#tab-10" class="info-tabs__item">3</a>
-          <a href="#tab-11" class="info-tabs__item">4</a>
-          <a href="#tab-12" class="info-tabs__item">5</a>
-          <a href="#tab-13" class="info-tabs__item">6</a>
-          <a href="#tab-14" class="info-tabs__item">7</a>
-        </div>
-        <div class="info-tabs__contentbox">
-          <div class="info-tabs__content info-tabs__content--active" id="tab-8">
-                <h4 class="weeks__day-content">День 1</h4>
+            <div class="info-tabs__content" id="tab-3">
+                <h4 class="weeks__day-content">День 3</h4>
                 <ul class="weeks__list">
-                    <li class="weeks__item">Силове тренування на ноги, сідниці та спину.</li>
-                    <li class="weeks__item">Відео – розбір : « Білки та жири – користь, добова норма та їх джерела».</li>
+                    <li class="weeks__item">Силове тренування на руки, плечі та прес.</li>
+                    <li class="weeks__item">Відео-розбір на тему: «Відмінність складних вуглеводів від простих та їх вплив на тіло».</li>
+                    <li class="weeks__item">Пам’ятка “ Транс-жири та прості вуглеводи”.</li>
                 </ul>
-          </div>
+                
+            
+            </div>
+            <div class="info-tabs__content" id="tab-4">
+                <h4 class="weeks__day-content">День 4</h4>
+                <ul class="weeks__list">
+                    <li class="weeks__item">Розтяжка.</li>
+                </ul>
+            </div>
 
-          <div class="info-tabs__content" id="tab-9">
-            <h4 class="weeks__day-content">День 2</h4>
-            <ul class="weeks__list">
-                <li class="weeks__item">Розтяжка.</li>
-                <li class="weeks__item">Корисні пам’ятки для тебе на кожен день.</li>
-            </ul>
-          </div>
-
-          <div class="info-tabs__content" id="tab-10">
-            <h4 class="weeks__day-content">День 3</h4>
-            <ul class="weeks__list">
-                <li class="weeks__item">Силове тренування на руки , плечі та прес..</li>
-            </ul>
-          </div>
-          <div class="info-tabs__content" id="tab-11">
-            <h4 class="weeks__day-content">День 4</h4>
-            <ul class="weeks__list">
-                <li class="weeks__item">Розтяжка.</li>
-                <li class="weeks__item">Відео: «Мотивація та дисципліна».</li>
-            </ul>
-          </div>
-
-          <div class="info-tabs__content" id="tab-12">
-            <h4 class="weeks__day-content">День 5</h4>
-            <ul class="weeks__list">
-                <li class="weeks__item">Функціональне тренування на все тіло.</li>
-                <li class="weeks__item">Декілька корисних десертів без шкоди фігурі.</li>
-            </ul>
-          </div>
-          <div class="info-tabs__content" id="tab-13">
-            <h4 class="weeks__day-content">День 6</h4>
-            <ul class="weeks__list">
-                <li class="weeks__item">Ррозтяжка або повторення іншого тренування.</li>
-            </ul>
-          </div>
-          <div class="info-tabs__content" id="tab-14">
-            <h4 class="weeks__day-content">День 7</h4>
-            <ul class="weeks__list">
-                <li class="weeks__item">Контроль – вага, заміри, фото.</li>
-                <li class="weeks__item">Прямий ефір з Анею, отримайте відповіді на ваші питання.</li>
-            </ul>
-          </div>
+            <div class="info-tabs__content" id="tab-5">
+                <h4 class="weeks__day-content">День 5</h4>
+                <ul class="weeks__list">
+                    <li class="weeks__item">Функціональний тренінг на все тіло.</li>
+                    <li class="weeks__item">Список продуктів на випадок відключень електроенергії.</li>
+                </ul>
+            </div>
+            <div class="info-tabs__content" id="tab-6">
+                <h4 class="weeks__day-content">День 6</h4>
+                <ul class="weeks__list">
+                    <li class="weeks__item">В цей день ти можеш відпочити або повторити будь яке з попередніх тренувань.</li>
+                    <li class="weeks__item">Продовжуй харчуватись по плану.</li>
+                </ul>
+            </div>
+            <div class="info-tabs__content" id="tab-7">
+                <h4 class="weeks__day-content">День 7</h4>
+                <ul class="weeks__list">
+                    <li class="weeks__item">В цей день ти можеш відпочити або повторити будь яке з попередніх тренувань.</li>
+                    <li class="weeks__item">Продовжуй харчуватись по плану.</li>
+                </ul>
+            </div>
+            </div>
         </div>
-      </div>
+
+        
+        <div class="info-tabs">
+            <h4 class="weeks-title">Тиждень 2</h4>
+            <div class="info-tabs__items">
+            <a href="#tab-8" class="info-tabs__item info-tabs__item--active">1</a>
+            <a href="#tab-9" class="info-tabs__item">2</a>
+            <a href="#tab-10" class="info-tabs__item">3</a>
+            <a href="#tab-11" class="info-tabs__item">4</a>
+            <a href="#tab-12" class="info-tabs__item">5</a>
+            <a href="#tab-13" class="info-tabs__item">6</a>
+            <a href="#tab-14" class="info-tabs__item">7</a>
+            </div>
+            <div class="info-tabs__contentbox">
+            <div class="info-tabs__content info-tabs__content--active" id="tab-8">
+                    <h4 class="weeks__day-content">День 1</h4>
+                    <ul class="weeks__list">
+                        <li class="weeks__item">Силове тренування на ноги, сідниці та спину.</li>
+                        <li class="weeks__item">Відео – розбір : « Білки та жири – користь, добова норма та їх джерела».</li>
+                    </ul>
+            </div>
+
+            <div class="info-tabs__content" id="tab-9">
+                <h4 class="weeks__day-content">День 2</h4>
+                <ul class="weeks__list">
+                    <li class="weeks__item">Розтяжка.</li>
+                    <li class="weeks__item">Корисні пам’ятки для тебе на кожен день.</li>
+                </ul>
+            </div>
+
+            <div class="info-tabs__content" id="tab-10">
+                <h4 class="weeks__day-content">День 3</h4>
+                <ul class="weeks__list">
+                    <li class="weeks__item">Силове тренування на руки , плечі та прес..</li>
+                </ul>
+            </div>
+            <div class="info-tabs__content" id="tab-11">
+                <h4 class="weeks__day-content">День 4</h4>
+                <ul class="weeks__list">
+                    <li class="weeks__item">Розтяжка.</li>
+                    <li class="weeks__item">Відео: «Мотивація та дисципліна».</li>
+                </ul>
+            </div>
+
+            <div class="info-tabs__content" id="tab-12">
+                <h4 class="weeks__day-content">День 5</h4>
+                <ul class="weeks__list">
+                    <li class="weeks__item">Функціональне тренування на все тіло.</li>
+                    <li class="weeks__item">Декілька корисних десертів без шкоди фігурі.</li>
+                </ul>
+            </div>
+            <div class="info-tabs__content" id="tab-13">
+                <h4 class="weeks__day-content">День 6</h4>
+                <ul class="weeks__list">
+                    <li class="weeks__item">Ррозтяжка або повторення іншого тренування.</li>
+                </ul>
+            </div>
+            <div class="info-tabs__content" id="tab-14">
+                <h4 class="weeks__day-content">День 7</h4>
+                <ul class="weeks__list">
+                    <li class="weeks__item">Контроль – вага, заміри, фото.</li>
+                    <li class="weeks__item">Прямий ефір з Анею, отримайте відповіді на ваші питання.</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 </section>
   
-    <section class="container"> 
-        <div class="price">
+    <section class="container price"> 
+        <!-- <div class="price"> -->
             <h3 class="secondary-title">Вартість марафону</h3>
             <ul class="price__list">
                 <li class="price__item"><b>14 днів</b> регулярних тренувань.</li>
@@ -281,7 +283,7 @@
             </div>
              <blockquote class="blockquote-content">“Оплачуй вартість марафону вже сьогодні та отримуй у подарунок 30-хвилинне тренування «Шпагат» з доступом назавжди.”</blockquote>
              <button class="accent__btn btn">Прийняти участь</button>
-            </div> 
+            <!-- </div>  -->
     </section>
 
     <section class="container">

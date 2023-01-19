@@ -30,7 +30,7 @@ button{
 
 .btn{
     border-radius: 32px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     padding: 14px 35px;
     font-size: 16px;
 }
@@ -50,13 +50,13 @@ body{
 }
 .container{
     padding: 0 5px 25px 5px;
-    max-width: 390px;
+    min-width: 320px;
     margin: 0 auto;
 }
 
 .start-day{
     color: var(--c-primery);
-    position: absolute;
+    /* position: absolute; */
     padding: 5px;
 }
 .header__start{
@@ -65,21 +65,35 @@ body{
 
 
 }
+.header__top-content{
+    background-image: url(../images/main.svg);
+    height: 75vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #FFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: -40px; */
+    justify-content: space-between;
+}
+
 .header__content{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -40px;
 }
 .header__title{
     text-align: center;
     font-size: 24px;
     line-height: 29px;
+    margin-top: -25px;
+    color: var(--txt-c-primery);
 }
 .countdown{
     display: flex;
     justify-content: space-around;
-    
     margin: 20px auto;
 }
 
@@ -120,6 +134,7 @@ body{
 .weeks__item{
   list-style-image: url(../images/back.svg);
   padding-bottom: 7px;
+  line-height: 22px;
 }
 
 .about-marathon__steps-list{
@@ -213,7 +228,7 @@ body{
 .info-tabs__items{
     margin-bottom: 12px;   
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .info-tabs__item{
     font-size: 18px;
@@ -348,6 +363,95 @@ background-position: left 10% bottom 50%;
     background-repeat: no-repeat;
     background-size: inherit;
     text-align: center;
-     background-position: left 10% bottom 50%;
-    
+    background-position: left 10% bottom 50%;   
+}
+
+@media(min-width: 768px){
+    body{
+        font-size: 21px;
+        line-height: 26px;
+    }
+    .container {
+        min-width: 768px;    
+    }
+    .btn{
+        font-size: 23px;    
+    }
+    .secondary-title{
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+  
+    .about-marathon__wishes{
+        max-width: fit-content;
+        margin: 0 auto;
+    }
+    .about-marathon__wishes-list,
+    .author__list,
+    .price__list {
+        font-size: 21px;
+    }
+
+    .about-marathon__wishes-item,
+    .author__item,
+    .price__item,
+    .weeks__item{
+    padding-bottom: 14px;
+    }
+    .about-marathon__steps-item{
+    max-width: 45%;
+    }
+
+    .about-marathon__steps-list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .author{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        
+    .weeks-title {
+        font-size: 23px;
+    }
+    .old-prise,
+    .new-prise{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 30px;
+    }
+    /* .weeks__content{
+
+    } */
+    /* .weeks__content{
+        display: flex;
+    }
+    .info-tabs{
+        max-width: 45%;
+    } */
+
+   }
+   
+   @media(min-width: 900px){
+    body{
+        font-size: 21px;
+        line-height: 26px;
+    }
+    .container {
+        width: 900px;    
+    }
+    .header__top-content{
+        background-size: contain;
+    }
+    .about-marathon__steps-list {
+        /* display: flex; */
+        /* flex-direction: row; */
+        /* flex-wrap: wrap; */
+        justify-content: space-between;
+    }
 }
