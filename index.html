@@ -15,15 +15,11 @@
 </head>
 <body>
     <header class="container">
-         <div class="header__top-content">
-            <!-- <marquee class="start-day"> -->
+         <div class="header__top-content header__content">
                 <button class="header__start btn">14 лютого 2023</button>
-                <!-- <button class="header__start btn">14 лютого 2023</button>
-                <button class="header__start btn">14 лютого 2023</button> -->
-            <!-- </marquee> -->
         <!-- </div> -->
-        <div class="header__content">
-             <h1 class="header__title">Марафон <br> “СТРУНКЕ ТА ЗДОРОВЕ ТІЛО” </h1>
+        <!-- <div class="header__content"> -->
+             <h1 class="header__title">Марафон <br> “Cтрункості та Здоров’я” </h1>
             <div id="countdown" class="countdown">
                 <div class="countdown-number">
                 <span class="days countdown-time"></span>
@@ -42,8 +38,10 @@
                 <span class="countdown-text">Sec.</span>
                 </div>
             </div>     
-          <button class="header__btn btn">Прийняти участь</button>
-        </div>
+            <a href="#form">
+                <button class="header__btn btn">Прийняти участь</button>
+            </a>
+        <!-- </div> -->
          </div>
     </header>
     <section class="container">
@@ -95,15 +93,8 @@
                  <li class="about-marathon__steps-item">
                     <img class="steps-img" src="images/step4.svg" alt="img">
                     <div class="steps-content">
-                        <h4 class="steps-title">Відео - розбори, як тримати вагу в нормі</h4>
-                        <!-- <span class="stps-info">дотримуйся всіх рекомендацій та неодмінно отримуй результати</span> -->
-                    </div>
-                 </li>
-                 <li class="about-marathon__steps-item">
-                    <img class="steps-img" src="images/step4.svg" alt="img">
-                    <div class="steps-content">
-                        <h4 class="steps-title">2 прямих - ефіри з відповідями на запитання.</h4>
-                        <!-- <span class="stps-info">дотримуйся всіх рекомендацій та неодмінно отримуй результати</span> -->
+                        <h4 class="steps-title">Відео - розбори та 2 прямих ефіри</h4>
+                        <span class="stps-info">дізнаєшся як тримати вагу в нормі та отримаєш відповіді на всі питання</span>
                     </div>
                  </li>
             </ol>
@@ -112,11 +103,12 @@
     </section>
     
     <section class="container">
-        <blockquote class="blockquote-content">“Ти все ще ведеш малорухливий спосіб і вже забула як це, мати тонку талію? 
-            Долучайся до марафону та зроби перший крок до тіла своєї мрії.”</blockquote>
+        <blockquote class="blockquote-content">“Ти все ще ведеш малорухливий спосіб і вже забула як це, мати тонку талію?  Долучайся до марафону та зроби перший крок до тіла своєї мрії.”</blockquote>
     </section>
     <section class="container">
-        <button class="accent__btn btn">Прийняти участь</button>
+        <a href="#form">
+            <button class="accent__btn btn">Прийняти участь</button>
+        </a>
     </section>
     <section class="container author">
         <h3 class="secondary-title author-title">Автор марафону</h3>
@@ -297,13 +289,15 @@
                 <img src="images/ZSY.svg" alt="#">
             </div>
              <blockquote class="blockquote-content">“Оплачуй вартість марафону вже сьогодні та отримуй у подарунок 30-хвилинне тренування «Шпагат» з доступом назавжди.”</blockquote>
-             <button class="accent__btn btn">Прийняти участь</button>
+             <a href="#form">
+                <button class="accent__btn btn">Прийняти участь</button>
+            </a>
             <!-- </div>  -->
     </section>
 
     <section class="container">
         <h3 class="secondary-title">Заповни форму для участі в марафоні</h3>
-        <form class="callback">
+        <form class="callback" id="form">
                 <!-- Hidden Required Fields  для отправки на мыло-->
                 <input type="hidden" name="project_name" value="marathon">
                 <input type="hidden" name="admin_email" value="okhomenko2363@gmail.com">
@@ -320,6 +314,7 @@
                 </button>
         </form>
     </section>
+
     <section class="containet FAQ">
         <h3 class="secondary-title">FAQ</h3>
         <div class="FAQ-container">
