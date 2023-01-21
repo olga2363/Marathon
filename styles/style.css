@@ -164,7 +164,8 @@ body{
     margin: 9px 15px;
 }
 .steps-content{
-    margin-top: 23px;
+    margin-top: 10px;
+
 }
 .steps-title{
     font-weight: 500;
@@ -209,7 +210,7 @@ body{
 .blockquote-content{
     font-weight: 600;
     font-style: italic;
-    /* font-size: 14px; */
+    font-size: 16px;
     line-height: 24px;
     /* display: flex; */
     align-items: center;
@@ -274,8 +275,6 @@ body{
     line-height: 24px;
     color: var(--txt-c-primery);
 }
-
-
 
 .price{
     background-image: url(../images/price.svg);
@@ -366,6 +365,58 @@ background-position: left 10% bottom 50%;
     background-position: left 10% bottom 50%;   
 }
 
+    .FAQ-container {
+        /* padding: 0 5px 25px 5px; */
+        margin: 0 auto;
+    }
+    .FAQ-body {
+        margin: 0 auto;
+        height: 0;
+        line-height: 18px;
+        padding: 0 30px;
+        box-sizing: border-box;
+        overflow: hidden;
+        font-size: 13px;
+        color: var(--c-secondary);
+    }
+    .FAQ-body p { 
+        margin: 0 0 10px;
+    }
+    .FAQ__question {
+        color:  color: var(--txt-c-primery);;
+        cursor: pointer;
+        display: block;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 10px;
+        z-index: 100;
+    }
+    /* .FAQ__question:hover {
+    } */
+    .FAQ-container input{
+        display: none;
+    }
+    .FAQ__question:before {
+        /* content: url(../images/back.svg); */
+        content: '\276F';
+        float: right;
+    }
+    .FAQ-container input:checked + .FAQ__question {
+        color: var(--txt-c-primery);
+    }
+    .FAQ-container input:checked + .FAQ__question:before {
+        transition: transform .35s;
+        transform: rotate(90deg);
+    }
+    .FAQ-container input:checked + .FAQ__question + .FAQ-body {
+        height: auto;
+        margin-top: -5px;
+        padding: 20px;
+    }
+
+
+
 @media(min-width: 768px){
     body{
         font-size: 21px;
@@ -400,7 +451,7 @@ background-position: left 10% bottom 50%;
     padding-bottom: 14px;
     }
     .about-marathon__steps-item{
-    max-width: 45%;
+        max-width: 49%;
     }
 
     .about-marathon__steps-list{
@@ -424,6 +475,9 @@ background-position: left 10% bottom 50%;
         font-weight: 400;
         font-size: 23px;
         line-height: 30px;
+    }
+    .blockquote-content{
+        margin: 20px 100px;
     }
     /* .weeks__content{
 
@@ -453,5 +507,8 @@ background-position: left 10% bottom 50%;
         /* flex-direction: row; */
         /* flex-wrap: wrap; */
         justify-content: space-between;
+    }
+    .FAQ-container {
+        margin: 0 50px;
     }
 }
