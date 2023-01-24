@@ -37,6 +37,7 @@ button{
     /* margin-top: 20px; */
     padding: 14px 35px;
     font-size: 16px;
+    cursor: pointer;
 }
 .secondary-title{
     padding: 20px;
@@ -458,13 +459,14 @@ background-position: left 10% bottom 50%;
     /* padding: 0 50px; */
 }
 .slider__content .slick-arrow{
-    position: absolute;
+    /* position: absolute;
     top: 50%;
     z-index: 10;
     font-size: 0;
     width: 30px;
     height: 50px;
-    margin: -30px 0 0 0;
+    margin: -30px 0 0 0; */
+    background-color: transparent;
 }
 /* .slider__content .slick-arrow.slick-prev{
     left: 0;
@@ -572,7 +574,15 @@ background-position: left 10% bottom 50%;
         right: 0;
         background-image: url(../images/doun.svg);
         }
-
+        .slider__content .slick-arrow{
+            position: absolute;
+            top: 50%;
+            z-index: 10;
+            font-size: 0;
+            width: 30px;
+            height: 50px;
+            margin: -30px 0 0 0;
+        }
    }
    
    @media(min-width: 900px){
