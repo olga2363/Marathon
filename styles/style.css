@@ -466,15 +466,15 @@ background-position: left 10% bottom 50%;
     height: 50px;
     margin: -30px 0 0 0;
 }
-.slider__content .slick-arrow.slick-prev{
+/* .slider__content .slick-arrow.slick-prev{
     left: 0;
     background-image: url(../images/doun.svg);
-    /* background-image: url(../images/back.svg) 0 0 / 100% no-repeat; */
-}
-.slider__content .slick-arrow.slick-next{
+    background-image: url(../images/back.svg) 0 0 / 100% no-repeat;
+} */
+/* .slider__content .slick-arrow.slick-next{
     right: 0;
     background-image: url(../images/doun.svg);
-    }
+    } */
 /* Точки (булиты) */
 .slider__content .slick-dots{ 
     display: flex;
@@ -563,6 +563,15 @@ background-position: left 10% bottom 50%;
         margin: 20px 100px;
     }
    
+    .slider__content .slick-arrow.slick-prev{
+        left: 0;
+        background-image: url(../images/doun.svg);
+        /* background-image: url(../images/back.svg) 0 0 / 100% no-repeat; */
+    }
+    .slider__content .slick-arrow.slick-next{
+        right: 0;
+        background-image: url(../images/doun.svg);
+        }
 
    }
    
