@@ -26,9 +26,16 @@ $(function () {
             // variableWidth:true,
 
             // centerPadding: 50px,
-
-
             mobileFirst: true,
+            responsive:[
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                }
+            ]
+            
         });
     });
 

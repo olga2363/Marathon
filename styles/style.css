@@ -454,7 +454,8 @@ background-position: left 10% bottom 50%;
 
 
 .slider__content{
-    /* position: relative;padding: 0 50px; */
+    position: relative;
+    /* padding: 0 50px; */
 }
 .slider__content .slick-arrow{
     position: absolute;
