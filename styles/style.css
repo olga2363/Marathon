@@ -167,6 +167,7 @@ body{
 }
 .steps-img{
     margin: 9px 15px;
+    border-radius: 16px;
 }
 .steps-content{
     margin-top: 10px;
@@ -188,6 +189,8 @@ body{
 .author{
     background-color: var(--c-primery);
     padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
 
 }
 .author-title{
