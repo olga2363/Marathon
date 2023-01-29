@@ -15,12 +15,12 @@
 </head>
 <body>
     <header class="container">
-         <div class="header__top-content header__content">
-                <button class="header__start btn">14 лютого 2023</button>
+        <marquee class="start-day"> марафон розпочинається <b>14 лютого</b> </marquee>
+        <div class="header__top-content header__content">
+             <!-- <button class="header__start btn">14 лютого 2023</button> -->
         <!-- </div> -->
-        <!-- <div class="header__content"> -->
-             <h1 class="header__title">Марафон <br> “Cтрункості та Здоров’я” </h1>
-            <div id="countdown" class="countdown">
+             <h1 class="header__title">Марафон <br> "Бути стрункою - легко” </h1>
+            <!-- <div id="countdown" class="countdown">
                 <div class="countdown-number">
                 <span class="days countdown-time"></span>
                 <span class="countdown-text">Days</span>
@@ -37,11 +37,10 @@
                 <span class="seconds countdown-time"></span>
                 <span class="countdown-text">Sec.</span>
                 </div>
-            </div>     
+            </div>      -->
             <a href="#form">
                 <button class="header__btn btn">Прийняти участь</button>
             </a>
-        <!-- </div> -->
          </div>
     </header>
     <section class="container">
@@ -63,21 +62,21 @@
             <h3 class="secondary-title">Що тебе чекає на марафоні</h3>
             <ol class="about-marathon__steps-list">
                 <li class="about-marathon__steps-item">
-                    <img class="steps-img" src="images/step4.svg" alt="img">
+                    <img class="steps-img" src="images/step1.svg" alt="img">
                     <div class="steps-content">
                         <h4 class="steps-title">14 днів регулярних тренувань та здорового харчування</h4>
                         <span class="stps-info">силові та функціональні вправи на все тіло + розтяжка</span>
                     </div>
                 </li>
                 <li class="about-marathon__steps-item">
-                    <img class="steps-img" src="images/step4.svg" alt="img">
+                    <img class="steps-img" src="images/step2.svg" alt="img">
                     <div class="steps-content">
                         <h4 class="steps-title">10 тренувань в записі по 30 хвилин: 6 силових і кардіо-тренувань, 4 заняття з розтяжки</h4>
                         <span class="stps-info">доступні для тебе в будь-який час</span>
                     </div>
                 </li>
                 <li class="about-marathon__steps-item">
-                    <img class="steps-img" src="images/step4.svg" alt="img">
+                    <img class="steps-img" src="images/step3.svg" alt="img">
                     <div class="steps-content">
                         <h4 class="steps-title">Меню - конструктор на два тижні</h4>
                         <span class="stps-info">який можна використовувати і після марафону</span>
@@ -91,7 +90,7 @@
                     </div>
                  </li>
                  <li class="about-marathon__steps-item">
-                    <img class="steps-img" src="images/step4.svg" alt="img">
+                    <img class="steps-img" src="images/step5.svg" alt="img">
                     <div class="steps-content">
                         <h4 class="steps-title">Відео - розбори та 2 прямих ефіри</h4>
                         <span class="stps-info">дізнаєшся як тримати вагу в нормі та отримаєш відповіді на всі питання</span>
@@ -310,7 +309,7 @@
                 <input class="callback__input input-name" name="Имя" type="text" placeholder="Прізвище, І'мя">
                 <input class="callback__input input-tel" name="Телефон" type="tel" placeholder="Телефон">
                 <input class="callback__input input-mail" name="Телефон" type="e-mail" placeholder="Електронна пошта">
-                <button class="accent__btn btn btn">
+                <button class="callback-btn btn">
                   <span>
                     Залишити заявку
                   </span>
@@ -320,12 +319,7 @@
     <section class="container slider">
         <h3 class="secondary-title">Відгуки</h3>
         <div class="slider__content">
-            <div class="slider__item">
-                <img src="images/slider/IMG_0036.JPG" alt="">
-            </div>
-            <div class="slider__item">
-                <img data-lazy="images/slider/IMG_0037.JPG" src="images/slider/IMG_0037.JPG" alt="">
-            </div>
+           
             <div class="slider__item">
                 <img src="images/slider/IMG_0038.JPG" alt="">
             </div>
@@ -344,9 +338,9 @@
             <div class="slider__item">
                 <img src="images/slider/Снимок экрана 2023-01-24 в 16.23.38.png" alt="">
             </div>
-            <div class="slider__item">
+            <!-- <div class="slider__item">
                 <img src="images/slider/IMG_0042.JP" alt="">
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -378,9 +372,12 @@
         </div>
     </section>
 
+    <section>
+
+    </section>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/time.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="js/slick.min.js"></script>

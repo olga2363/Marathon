@@ -25,20 +25,31 @@ a{
     text-decoration: none;
 }
 
-button{
+/* button{
+    list-style: none;
+    font: inherit;
+    color: inherit;  
+} */
+
+
+.btn{
     list-style: none;
     border: none;
     font: inherit;
-    color: inherit;
-}
-
-.btn{
+    color: inherit;  
     border-radius: 32px;
     /* margin-top: 20px; */
     padding: 14px 35px;
     font-size: 16px;
     cursor: pointer;
+    animation: glowing 1300ms infinite;
 }
+    @-webkit-keyframes glowing {
+    0% { background-color: 0; -webkit-box-shadow: #BBF246 0 3px  #BBF246; }
+    50% { background-color: 0; -webkit-box-shadow: 0 0 15px  #94d20e; }
+    100% { background-color: 0; -webkit-box-shadow: #BBF246 0 3px  #BBF246; }
+    }
+
 .secondary-title{
     padding: 20px;
     font-size: 18px;
@@ -62,6 +73,10 @@ body{
 .start-day{
     color: var(--c-primery);
     padding: 5px;
+    /* position: fixed; */
+    font-size: 22px;
+    font-weight: 700;
+    text-shadow: 1px 1px var(--c-accent);
 }
 .header__start{
     background-color: var(--c-accent);
@@ -70,7 +85,7 @@ body{
 }
 .header__top-content{
     background-image: url(../images/main.svg);
-    height: 100vh;
+    height: 99vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -84,17 +99,22 @@ body{
 .header__content{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: flex-end;
     padding: 10px;
 }
 .header__title{
-    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
     text-align: center;
-    font-size: 24px;
-    line-height: 29px;
-    margin-top: 120px;
-    color: var(--c-light);
-}
+    font-size: 33px;
+    line-height: 50px;
+    /* margin-top: 120px; */
+    margin-bottom: 70px;
+    color: var(--txt-c-primery);
+    text-shadow: 1px 0 #94d20e;
+   /* text-shadow: 1px solid rgba(187, 242, 70, 0.55); */
+    }
+
 .countdown{
     display: flex;
     justify-content: space-around;
@@ -112,13 +132,15 @@ body{
     box-shadow: 2px 6px 27px 3px rgb(0 0 0 / 4%);
     justify-content: flex-end;
 }
-.header__btn{
+.header__btn,
+.callback-btn{
     background-color: var(--c-primery);
     color: var(--txt-c-light);
+    margin-top: 10px;
 }
 
 .about-marathon__wishes{
-    background-image: url(../images/about.svg);
+    background-image: url(../images/about1.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -346,6 +368,7 @@ body{
     border: none;
     border-radius: 15px;
 }
+
 .input-name{
 background-image: url(../images/name.svg);
 background-repeat: no-repeat;
@@ -456,7 +479,6 @@ background-position: left 10% bottom 50%;
 /* Стрелка не активная */
 .slick-arrow.slick-disabled{}
 
-
 .slider__content{
     position: relative;
     /* padding: 0 50px; */
@@ -469,6 +491,7 @@ background-position: left 10% bottom 50%;
     width: 30px;
     height: 50px;
     margin: -30px 0 0 0; */
+    border: none;
     font-size: 0;
     background-color: transparent;
 }
