@@ -85,6 +85,10 @@ body{
 }
 .header__top-content{
     background-image: url(../images/main.svg);
+    box-shadow:  inset 
+    0 -11em 3em rgb(0 0 0 / 30%), 
+    0 0 0 0 rgb(255 255 255), 
+    0 0 0 rgb(0 0 0 / 54%);
     height: 99vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -101,10 +105,6 @@ body{
     flex-direction: column;
     justify-content: flex-end;
     padding: 10px;
-    box-shadow:  inset 
-    0 -11em 3em rgb(0 0 0 / 30%), 
-    0 0 0 0 rgb(255 255 255), 
-    0 0 0 rgb(0 0 0 / 54%);
 }
 .header__title{
     font-family: 'Lato', sans-serif;
@@ -192,7 +192,9 @@ body{
 }
 .steps-img{
     margin: 9px 15px;
-    border-radius: 16px;
+    border-radius: 16px;    
+    width: 110px;
+    height: 117px;
 }
 .steps-content{
     margin-top: 10px;
