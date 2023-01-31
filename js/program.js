@@ -29,7 +29,7 @@ $(function () {
             mobileFirst: true,
             responsive:[
                 {
-                    breakpoint: 768,
+                    breakpoint: 820,
                     settings: {
                         slidesToShow: 2
                     }
